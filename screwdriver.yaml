@@ -1,5 +1,5 @@
 shared:
-  image: centos:centos7
+  image: alpine/git
 
 jobs:
   job1:
