@@ -1,0 +1,12 @@
+shared:
+  image: centos:centos7
+
+jobs:
+  job1:
+    requires: [ ~pr, ~main ]
+    steps:
+      - echo: echo hoge
+  job2:
+    requires: [ ~pr:dev ]
+    steps:
+      - echo: echo hoge
