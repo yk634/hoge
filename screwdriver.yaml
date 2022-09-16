@@ -9,4 +9,4 @@ jobs:
   job2:
     requires: [ ~pr:dev ]
     steps:
-      - echo: echo hoge
+      - echo: git log
